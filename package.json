@@ -1,0 +1,23 @@
+{
+  "name": "growth-academy",
+  "version": "1.0.0",
+  "description": "Early Learning App",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dkingdon/Growth-Academy.git"
+  },
+  "author": "Dan Kingdon",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dkingdon/Growth-Academy/issues"
+  },
+  "homepage": "https://github.com/dkingdon/Growth-Academy#readme",
+  "dependencies": {
+    "express": "^4.14.0"
+  }
+}
