@@ -27,6 +27,16 @@ console.log('app.js is connected') // TODO: remove before production
           controllerAs: 'activityCtrl',
           controller: 'activityController'
         })
+        .when('/booklist', {
+          templateUrl: '/views/templates/bookOptions.html',
+          controllerAs: 'bookOptionsCtrl',
+          controller: 'bookOptionsController'
+        })
+        .when('/book', {
+          templateUrl: '/views/templates/book.html',
+          controllerAs: 'bookCrtl',
+          controller: 'bookController'
+        })
 
 
 
