@@ -21,7 +21,7 @@ console.log('app.js is connected') // TODO: remove before production
 
 
       $locationProvider.html5Mode({
-        enable: true,
+        enabled: true,
         requireBase: false
       });
 

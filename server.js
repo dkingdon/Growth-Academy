@@ -2,12 +2,15 @@
   var app = express();
   var bodyParser = require('body-parser');
 
-  app.use(express.static(__dirname + '/public'))
   app.use(bodyParser.urlencoded({ extended: false}));
+  app.use(express.static(__dirname + '/public'));
 
   /* - - - HTML Endpoints - - - */
   app.get('*', function homepage (req, res) {
     res.sendFile(__dirname + '/public/views/index.html');
+  });
+  app.get('/select', function homepage (req, res) {
+    res.sendFile(__dirname + '/public/views/templates/gradeSelect.html');
   });
   //TODO: Make sure and add all front end routes once created and remove the asterisk above before production (should be a foward slash)
 
