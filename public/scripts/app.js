@@ -17,6 +17,16 @@ console.log('app.js is connected') // TODO: remove before production
           controllerAs: 'gradeSelectCtrl',
           controller: 'gradeSelectController'
         })
+        .when('/options', {
+          templateUrl: '/views/templates/activityOptions.html',
+          controllerAs: 'activityOptionsCtrl',
+          controller: 'activityOptionsController'
+        })
+        .when('/activity', {
+          templateUrl: '/views/templates/activity.html',
+          controllerAs: 'activityCtrl',
+          controller: 'activityController'
+        })
 
 
 
