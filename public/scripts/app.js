@@ -22,10 +22,10 @@ console.log('app.js is connected') // TODO: remove before production
           controllerAs: 'activityOptionsCtrl',
           controller: 'activityOptionsController'
         })
-        .when('/activity', {
-          templateUrl: '/views/templates/activity.html',
-          controllerAs: 'activityCtrl',
-          controller: 'activityController'
+        .when('/pkShapes', {
+          templateUrl: '/views/templates/pkShapes.html',
+          controllerAs: 'pkShapesCtrl',
+          controller: 'pkShapesController'
         })
         .when('/booklist', {
           templateUrl: '/views/templates/bookOptions.html',

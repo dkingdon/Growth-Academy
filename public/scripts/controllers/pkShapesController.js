@@ -1,11 +1,11 @@
-console.log('activityController.js is connected') //TODO: Revome before production
+console.log('pkShapesController.js is connected') //TODO: Revome before production
 
   angular
     .module('academy')
-    .controller('activityController', activityController);
+    .controller('pkShapesController', pkShapesController);
 
-    activityController.$inject = ['$http'];
-    function activityController ($http) {
+    pkShapesController.$inject = ['$http'];
+    function pkShapesController ($http) {
       var vm = this;
 
       /* - - - temp - - - */
