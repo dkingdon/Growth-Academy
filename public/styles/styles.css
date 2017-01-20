@@ -1,3 +1,13 @@
 body {
   background-color: grey;
+  color: white;
+  text-align: center;
+}
+
+.viewport {
+  border: 2px solid white;
+  border-radius: 10px;
+  height: 80vh;
+  margin-left: 10px;
+  margin-right: 10px;
 }
