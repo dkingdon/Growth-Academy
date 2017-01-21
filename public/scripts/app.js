@@ -32,6 +32,11 @@ console.log('app.js is connected') // TODO: remove before production
           controllerAs: 'pkColorsCtrl',
           controller: 'pkColorsController'
         })
+        .when('/pkCounting', {
+          templateUrl: '/views/templates/pkCounting.html',
+          controllerAs: 'pkCountingCtrl',
+          controller: 'pkCountingController'
+        })
         .when('/booklist', {
           templateUrl: '/views/templates/bookOptions.html',
           controllerAs: 'bookOptionsCtrl',

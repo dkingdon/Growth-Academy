@@ -19,6 +19,26 @@ console.log('pkShapesController.js is connected') //TODO: Revome before producti
         $('#pk-board h2').text(randomShape);
       }
 
+// TODO: need to write funciton that displays mulitple shapes on screens, text asking to identify a specific shape. using randomize function
+
+// TODO: need to write a function that alternates between the two game types.
+
+      vm.displayShapes = function() {
+
+      }
+      /* - - - Shuffles Arrays - - - */
+      vm.randomize = function(arr) {
+        var currentIndex = arr.length, tempVal, randomIndex;
+        while (0 !== currentIndex) {
+          randomIndex = Math.floor(Math.random() * currentIndex);
+          currentIndex -= 1;
+          tempVal = arr[currentIndex];
+          arr[currentIndex] = arr[randomIndex];
+          arr[randomIndex] = tempVal
+        }
+        return arr;
+      }
+
       //TODO: deactivate buttons after inital answer
       vm.checkForWinner = function(shape) {
         $('#pk-directions h1').text();
