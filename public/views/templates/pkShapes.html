@@ -16,8 +16,8 @@
   <br />
 
   <!-- TODO: will need to dynamically and randomly generate these buttons before production -->
-    <div id="pk-answer-btns">
-        <button href="" class="btn btn-success btn-lg" role="button" ng-click="pkShapesCtrl.checkForWinner('rectangle')">Rectangle</button>
+    <div id="pk-answer-btns" style="visibility:hidden">
+        <button class="btn btn-success btn-lg" ng-click="pkShapesCtrl.checkForWinner('rectangle')">Rectangle</button>
 
         <button href="" class="btn btn-success btn-lg" role="button" ng-click="pkShapesCtrl.checkForWinner('square')">Square</button>
 
@@ -28,7 +28,7 @@
 
   <br />
 
-  <button href="" class="btn btn-success btn-lg action" role="button" ng-click="pkShapesCtrl.displayShape()">Play</button>
+  <button href="" class="btn btn-success btn-lg action" role="button" ng-click="pkShapesCtrl.alternateGameStyle()">Play</button>
 
 
   <a href="/" class="btn btn-primary active btn-xs" role="button">Home</a>
