@@ -22,7 +22,7 @@ console.log('pkShapesController.js is connected') //TODO: Revome before producti
       //TODO: deactivate buttons after inital answer
       vm.checkForWinner = function(shape) {
         $('#pk-directions h1').text();
-        $('#pk-board h2').text(' ');
+        $('#pk-board h2').text('');
         if (shape == randomShape) {
           $('#pk-directions h1').text("Great Job! You did it!");
         }
