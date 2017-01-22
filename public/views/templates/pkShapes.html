@@ -1,0 +1,34 @@
+<h1>Hello from the pre-k shapes page, this is where the magic will happen</h1>
+
+  <br />
+
+  <div id="pk-directions">
+    <h1></h1>
+  </div>
+
+
+  <br />
+
+    <div id="pk-board">
+      <h2></h2>
+    </div>
+
+  <br />
+
+  <!-- TODO: will need to dynamically and randomly generate these buttons before production -->
+    <div id="pk-answer-btns" style="visibility:hidden">
+        <button class="btn btn-success btn-lg" ng-click="pkShapesCtrl.checkForWinner('rectangle')">Rectangle</button>
+
+        <button href="" class="btn btn-success btn-lg" role="button" ng-click="pkShapesCtrl.checkForWinner('square')">Square</button>
+
+        <button href="" class="btn btn-success btn-lg" role="button" ng-click="pkShapesCtrl.checkForWinner('circle')">Circle</button>
+
+        <button href="" class="btn btn-success btn-lg" role="button" ng-click="pkShapesCtrl.checkForWinner('triangle')">Triangle</button>
+    </div>
+
+  <br />
+
+  <button href="" class="btn btn-success btn-lg action" role="button" ng-click="pkShapesCtrl.alternateGameStyle()">Play</button>
+
+
+  <a href="/" class="btn btn-primary active btn-xs" role="button">Home</a>
