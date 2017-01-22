@@ -8,6 +8,7 @@ console.log('pkColorsController.js is connected') //TODO: Revome before producti
     function pkColorsController ($http) {
       var vm = this;
       var randomColor;
+      var activeGame = 1;
 
       /* - - - temp - - - */
       // maybe have the array be objects with name and image ref. this way can associate the selection with the answers.

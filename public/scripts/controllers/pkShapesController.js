@@ -10,11 +10,7 @@ console.log('pkShapesController.js is connected') //TODO: Revome before producti
       var targetShape;
       var activeGame = 1; //global to identify present game type
 
-      /* - - - temp - - - */
-      // maybe have the array be objects with name and image ref. this way can associate the selection with the answers.
-      var shapes = ['square', 'circle', 'triangle', 'rectangle'];
-
-// TODO: need to write a function that alternates between the two game types.
+      var shapes = [{name:'square', img:'../images/square.png'}, {name:'circle', img:'../images/circle.png'}, {name:'triangle', img:'../images/triangle.png'}, {name:'rectangle', img:'../images/rectangle.png'}];
 
       vm.alternateGameStyle = function() {
         activeGame === 1 ? vm.displayOneShape() : vm.displayManyShapes();
@@ -37,34 +33,39 @@ console.log('pkShapesController.js is connected') //TODO: Revome before producti
 
       vm.displayOneShape = function() {
         targetShape = shapes[Math.floor(Math.random() * shapes.length)];
-        var randomShapes = vm.randomize(shapes);
+        // var randomShapes = vm.randomize(shapes); //not needed unless i can figure out how to get the buttons to appear dinamically
         $('#pk-directions h1').text('What shape is this?');
-        $('#pk-board h2').text(targetShape);
+        $('#pk-board').prepend('<img src="' + targetShape.img + '" />');
         $('#pk-answer-btns').attr('style', 'visibility:visible');
         activeGame = 0;
       }
 
 
       vm.displayManyShapes = function() {
+        $('#pk-board h2').text(' ')
         var randomShapes = vm.randomize(shapes);
-        var targetShape = randomShapes[Math.floor(Math.random() * randomShapes.length)];
-        $('#pk-directions h1').text('Can you find the ' + targetShape + '?')
-        $('#pk-board h2').text(randomShapes[0] + ' ' + randomShapes[1] + ' ' + randomShapes[2] + ' ' + randomShapes[3]);
+        targetShape = randomShapes[Math.floor(Math.random() * randomShapes.length)];
+        $('#pk-directions h1').text('Can you find the ' + targetShape.name + '?')
+        $('#pk-board h2').prepend('<img src="' + randomShapes[0].img + '" />' + ' ' + '<img src="' + randomShapes[1].img + '" />' + ' ' + '<img src="' + randomShapes[2].img + '" />' + ' ' + '<img src="' + randomShapes[3].img + '" /></a>');
         activeGame = 1
       }
 
+
+//
+
+
       //TODO: deactivate buttons after inital answer
       vm.checkForWinner = function(shape) {
-        $('#pk-board h2').text('');
-        if (shape == targetShape) {
+        if (shape == targetShape.name) {
           $('#pk-directions h1').text("Great Job! You did it!");
         }
         else {
           $('#pk-directions h1').text("Woops, not quite right");
-          $('#pk-board h2').text('That was a ' + targetShape);
+          $('#pk-board h2').text('That was a ' + targetShape.name);
         };
         $('#pk-answer-btns').attr('style', 'visibility:hidden');
         $('.action').text('Next');
+        $('img').remove();
       };
 
 

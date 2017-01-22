@@ -11,3 +11,8 @@ body {
   margin-left: 10px;
   margin-right: 10px;
 }
+
+#pk-board img {
+  height: 100px;
+  /*width: 100px;*/
+}
