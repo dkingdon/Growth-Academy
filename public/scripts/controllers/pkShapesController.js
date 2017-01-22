@@ -10,7 +10,7 @@ console.log('pkShapesController.js is connected') //TODO: Revome before producti
       var targetShape;
       var activeGame = 1; //global to identify present game type
 
-      var shapes = [{name:'square', img:'../images/square.png'}, {name:'circle', img:'../images/circle.png'}, {name:'triangle', img:'../images/triangle.png'}, {name:'rectangle', img:'../images/rectangle.png'}];
+      var shapes = [{name:'square', img:'../images/pkShapes/square.png'}, {name:'circle', img:'../images/pkShapes/circle.png'}, {name:'triangle', img:'../images/pkShapes/triangle.png'}, {name:'rectangle', img:'../images/pkShapes/rectangle.png'}];
 
       vm.alternateGameStyle = function() {
         activeGame === 1 ? vm.displayOneShape() : vm.displayManyShapes();
@@ -46,12 +46,9 @@ console.log('pkShapesController.js is connected') //TODO: Revome before producti
         var randomShapes = vm.randomize(shapes);
         targetShape = randomShapes[Math.floor(Math.random() * randomShapes.length)];
         $('#pk-directions h1').text('Can you find the ' + targetShape.name + '?')
-        $('#pk-board h2').prepend('<img src="' + randomShapes[0].img + '" />' + ' ' + '<img src="' + randomShapes[1].img + '" />' + ' ' + '<img src="' + randomShapes[2].img + '" />' + ' ' + '<img src="' + randomShapes[3].img + '" /></a>');
+        $('#pk-board h2').prepend('<img src="' + randomShapes[0].img + '" />' + ' ' + '<img src="' + randomShapes[1].img + '" />' + ' ' + '<img src="' + randomShapes[2].img + '" />' + ' ' + '<img src="' + randomShapes[3].img + '" />');
         activeGame = 1
       }
-
-
-//
 
 
       //TODO: deactivate buttons after inital answer
