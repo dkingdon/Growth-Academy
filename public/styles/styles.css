@@ -13,7 +13,8 @@ body {
 }
 
 #pk-board img {
-  height: 100px;
+  height: 20vh;
+  margin-top: 5px;
   /*width: 100px;*/
 }
 
