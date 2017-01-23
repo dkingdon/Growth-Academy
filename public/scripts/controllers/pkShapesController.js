@@ -46,7 +46,7 @@ console.log('pkShapesController.js is connected') //TODO: Revome before producti
         var randomShapes = vm.randomize(shapes);
         targetShape = randomShapes[Math.floor(Math.random() * randomShapes.length)];
         $('#pk-directions h1').text('Can you find the ' + targetShape.name + '?')
-        $('#pk-board h2').prepend('<img src="' + randomShapes[0].img + '" />' + ' ' + '<img src="' + randomShapes[1].img + '" />' + ' ' + '<img src="' + randomShapes[2].img + '" />' + ' ' + '<img src="' + randomShapes[3].img + '" />');
+        $('#pk-board').prepend('<img src="' + randomShapes[0].img + '" />' + ' ' + '<img src="' + randomShapes[1].img + '" />' + ' ' + '<img src="' + randomShapes[2].img + '" />' + ' ' + '<img src="' + randomShapes[3].img + '" />');
         activeGame = 1
       }
 

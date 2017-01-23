@@ -33,19 +33,35 @@ console.log('pkColorsController.js is connected') //TODO: Revome before producti
       vm.displayOneColor = function() {
         targetColor = colors[Math.floor(Math.random() * colors.length)];
         $('#pk-directions h1').text('What color is this?');
-        $('#pk-board').prepend('<img src="' + targetColor.img + '" />');
+        $('#pk-board').prepend('<img class="one-color" src="' + targetColor.img + '" />');
         $('#pk-answer-btns').attr('style', 'visibility:visible');
         activeGame = 0;
       }
 
+
       vm.displayManyColors = function() {
         $('#pk-board h2').text(' ')
+        $('#pk-many-colors').attr('style', 'visibility:visible');
         var randomColors = vm.randomize(colors);
         targetColor = randomColors[Math.floor(Math.random() * randomColors.length)];
-        $('#pk-directions h1').text('Can you find the ' + targetColor.name + '?')
-        $('#pk-board h2').prepend('<img src="' + randomColors[0].img + '" />' + ' ' + '<img src="' + randomColors[1].img + '" />' + ' ' + '<img src="' + randomColors[2].img + '" />' + ' ' + '<img src="' + randomColors[3].img + '" />');
+        $('#pk-directions h1').text('Can you find the color ' + targetColor.name + '?')
+        for (var i = 0; i < randomColors.length; i++) {
+            $('#color-' + i ).attr('style', ' ');
+        }
         activeGame = 1
       }
+
+      //TODO: remove if cannot refactor. Parking here to come back to
+      // for (var i = 0; i < randomColors.length; i++) {
+      //   $('#color-' + i ).attr('src', randomColors[i].img);
+      //     $('#color-' + i ).attr('style', ' ');
+      //       $('#color-' + i ).attr('ng-click', "pkColorsCtrl.checkForWinner('" + randomColors[i].name + "')");
+      // }
+
+
+      //// end playing aronud
+
+
 
       //TODO: deactivate buttons after inital answer
       vm.checkForWinner = function(color) {
@@ -55,11 +71,15 @@ console.log('pkColorsController.js is connected') //TODO: Revome before producti
         }
         else {
           $('#pk-directions h1').text("Woops, not quite right");
-          $('#pk-board h2').text('That was ' + targetColor);
+          $('#pk-board h2').text('That was ' + targetColor.name);
         };
         $('#pk-answer-btns').attr('style', 'visibility:hidden');
+          for (var i = 0; i < 4; i++) {
+            $('#color-' + i ).attr('style', 'height:0px');
+          }
+        $('#pk-many-colors').attr('style', 'visibility:hidden');
         $('.action').text('Next');
-        $('img').remove();
+        $('.one-color').remove();
       };
 
 
