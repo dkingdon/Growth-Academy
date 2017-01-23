@@ -13,15 +13,21 @@ console.log('stinkyController.js is connected') //TODO: Revome before production
 
 
       vm.nextPage = function() {
-        currentPage += 1;
+        currentPage === 17 ? currentPage = 0 : currentPage += 1;
         $('img').remove();
         $('.stinky').prepend(stinkyPages[currentPage].img)
+        if (currentPage !== 0) {
+          $('.back-btn').attr('style', 'visibility:visible');
+        };
       }
 
       vm.lastPage = function () {
-        currentPage -= 1
+        currentPage === 0 ? currentPage = 0 : currentPage -= 1
         $('img').remove();
         $('.stinky').prepend(stinkyPages[currentPage].img)
+        if (currentPage == 0) {
+          $('.back-btn').attr('style', 'visibility:hidden');
+        };
       }
 
     } // End of controller TODO: remove before production
