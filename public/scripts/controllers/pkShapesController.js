@@ -14,6 +14,7 @@ console.log('pkShapesController.js is connected') //TODO: Revome before producti
 
       vm.alternateGameStyle = function() {
         activeGame === 1 ? vm.displayOneShape() : vm.displayManyShapes();
+        $('#pk-board h2').text('');
       }
 
       /* - - - Shuffles Arrays - - - */
@@ -40,16 +41,6 @@ console.log('pkShapesController.js is connected') //TODO: Revome before producti
         activeGame = 0;
       }
 
-
-      // vm.displayManyShapes = function() {
-      //   $('#pk-board h2').text(' ')
-      //   var randomShapes = vm.randomize(shapes);
-      //   targetShape = randomShapes[Math.floor(Math.random() * randomShapes.length)];
-      //   $('#pk-directions h1').text('Can you find the ' + targetShape.name + '?')
-      //   $('#pk-board').prepend('<img src="' + randomShapes[0].img + '" />' + ' ' + '<img src="' + randomShapes[1].img + '" />' + ' ' + '<img src="' + randomShapes[2].img + '" />' + ' ' + '<img src="' + randomShapes[3].img + '" />');
-      //   activeGame = 1
-      // }
-
       vm.displayManyShapes = function() {
         $('#pk-board h2').text(' ')
         $('#pk-many-shapes').attr('style', 'visibility:visible');
@@ -65,7 +56,7 @@ console.log('pkShapesController.js is connected') //TODO: Revome before producti
 
       //TODO: deactivate buttons after inital answer
       vm.checkForWinner = function(shape) {
-        $('#pk-board h2').text('');
+        $('#pk-board h2').text(' ');
         if (shape == targetShape.name) {
           $('#pk-directions h1').text("Great Job! You did it!");
         }
@@ -75,7 +66,7 @@ console.log('pkShapesController.js is connected') //TODO: Revome before producti
         };
         $('#pk-answer-btns').attr('style', 'visibility:hidden');
           for (var i = 0; i < 4; i++) {
-            $('#cshape-' + i ).attr('style', 'height:0px');
+            $('#shape-' + i ).attr('style', 'height:0px');
           }
         $('#pk-many-shapes').attr('style', 'visibility:hidden');
         $('.action').text('Next');

@@ -16,6 +16,7 @@ console.log('pkColorsController.js is connected') //TODO: Revome before producti
 
       vm.alternateGameStyle = function() {
         activeGame === 1 ? vm.displayOneColor() : vm.displayManyColors();
+        $('#pk-board h2').text('');
       }
 
       vm.randomize = function(arr) {
