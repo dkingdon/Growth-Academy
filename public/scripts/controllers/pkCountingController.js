@@ -18,6 +18,7 @@ console.log('pkCountingController.js is connected') //TODO: Revome before produc
 
       vm.alternateGameStyle = function() {
         activeGame === 1 ? vm.displayOneNum() : vm.displayManyNums();
+        $('#pk-board h2').text('');
       }
 
       /* - - - Shuffles Arrays - - - */
@@ -36,23 +37,27 @@ console.log('pkCountingController.js is connected') //TODO: Revome before produc
       vm.displayOneNum = function() {
         targetNum = numbers[Math.floor(Math.random() * numbers.length)];
         $('#pk-directions h1').text('How many ' + targetNum.name + ' are there?');
-        $('#pk-board h2').prepend('<img src="' + targetNum.img + '" />');
+        $('#pk-board').prepend('<img class="one-num" src="' + targetNum.img + '" />');
         $('#pk-answer-btns').attr('style', 'visibility:visible');
         activeGame = 0;
       }
 
       vm.displayManyNums = function() {
         $('#pk-board h2').text(' ')
+        $('#pk-many-nums').attr('style', 'visibility:visible');
         var randomNums = vm.randomize(numbers);
         targetNum = randomNums[Math.floor(Math.random() * randomNums.length)];
-        $('#pk-directions h1').text('Can you find the group of ' + targetNum.amount + ' ?')
-        $('#pk-board h2').prepend('<img src="' + randomNums[0].img + '" />' + ' ' + '<img src="' + randomNums[1].img + '" />' + ' ' + '<img src="' + randomNums[2].img + '" />' + ' ' + '<img src="' + randomNums[3].img + '" />');
+        //TODO: add condition to handle singular case
+        $('#pk-directions h1').text('Can you find the goup of ' + targetNum.amount + '?');
+        for (var i = 0; i < randomNums.length; i++) {
+            $('#num-' + i ).attr('style', ' ');
+        }
         activeGame = 1
       }
 
 
-
       //TODO: deactivate buttons after inital answer
+      //TODO: maybe have a variable that the front end changes on click. run variable against randomNums.
       vm.checkForWinner = function(num) {
         $('#pk-board h2').text('');
         if (num == targetNum.amount) {
@@ -63,8 +68,12 @@ console.log('pkCountingController.js is connected') //TODO: Revome before produc
           $('#pk-board h2').text('That was number ' + targetNum.amount);
         };
         $('#pk-answer-btns').attr('style', 'visibility:hidden');
+          for (var i = 0; i < 4; i++) {
+            $('#num-' + i ).attr('style', 'height:0px');
+          }
+        $('#pk-answer-btns').attr('style', 'visibility:hidden');
         $('.action').text('Next');
-        $('img').remove();
+        $('.one-num').remove();
       };
 
 

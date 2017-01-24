@@ -14,7 +14,7 @@ console.log('pkShapesController.js is connected') //TODO: Revome before producti
 
       vm.alternateGameStyle = function() {
         activeGame === 1 ? vm.displayOneShape() : vm.displayManyShapes();
-        $('#pk-board h2').text('');
+        $('#pk-board h2').text(' ');
       }
 
       /* - - - Shuffles Arrays - - - */
@@ -72,8 +72,5 @@ console.log('pkShapesController.js is connected') //TODO: Revome before producti
         $('.action').text('Next');
         $('.one-shape').remove();
       };
-
-
-
 
     } // End of controller TODO: remove before production

@@ -59,11 +59,6 @@ console.log('pkColorsController.js is connected') //TODO: Revome before producti
       //       $('#color-' + i ).attr('ng-click', "pkColorsCtrl.checkForWinner('" + randomColors[i].name + "')");
       // }
 
-
-      //// end playing aronud
-
-
-
       //TODO: deactivate buttons after inital answer
       vm.checkForWinner = function(color) {
         $('#pk-board h2').text('');

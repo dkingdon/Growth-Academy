@@ -24,7 +24,7 @@ body {
 }
 
 .stinky img {
-  max-height: 100vmin;
-  max-width: 130vmin;
+  max-height: 100vh;
+  max-width: 80vw;
   vertical-align: middle;
 }
