@@ -10,7 +10,7 @@ console.log('kPatternsController.js is connected') //TODO: Revome before product
       var random;
       var answer;
 
-      var patternOptions = [{name:'square', img:'../images/pkShapes/square.png'}, {name:'circle', img:'../images/pkShapes/circle.png'}, {name:'triangle', img:'../images/pkShapes/triangle.png'},{name:'dinosaurs', img:'../images/pkCounting/dinosaurs.png'}, {name:'butterflies', img:'../images/pkCounting/butterflies.png'}, {name:'ballons', img:'../images/pkCounting/balloons.png'}, {name:'hotdogs', img:'../images/pkCounting/hotdogs.png'}];
+      var patternOptions = [{name:'square', img:'../images/pkShapes/square.png'}, {name:'circle', img:'../images/pkShapes/circle.png'}, {name:'triangle', img:'../images/pkShapes/triangle.png'},{name:'dinosaurs', img:'../images/pkCounting/dinosaurs.png'}, {name:'butterflies', img:'../images/pkCounting/butterflies.png'}, {name:'balloons', img:'../images/pkCounting/balloons.png'}, {name:'hotdogs', img:'../images/pkCounting/hotdogs.png'}];
 
       vm.randomize = function(arr) {
         var currentIndex = arr.length
@@ -43,6 +43,7 @@ console.log('kPatternsController.js is connected') //TODO: Revome before product
         for (var i = 0; i < finalOptions.length; i++) {
           $('#pattern-' + i).attr('src', finalOptions[i].img).attr('style', 'visibility:visible');
         };
+        $('.action').text('Next');
       }
 
       vm.checkForWinner = function(num) {
@@ -57,7 +58,6 @@ console.log('kPatternsController.js is connected') //TODO: Revome before product
           $('#pattern-header').text('Woops! Not quite right, the answer was ');
           $('#k-board').append('<img src="' + random[2].img + '" />');
         };
-        $('.action').text('Next');
       }
 
   } // End of controller TODO: remove before production
