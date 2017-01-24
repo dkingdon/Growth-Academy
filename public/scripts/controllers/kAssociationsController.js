@@ -48,13 +48,4 @@ console.log('kAssociationsController.js is connected') //TODO: Revome before pro
         }
       }
 
-      // randomize the array.
-      // new array with only 4 indexes,
-      // call a specific index each time
-      // store the target index number in answer variable
-      // display on screen
-      // hardcoded buttons with preset arg in the ng-click function call
-      // match preset arg with answer index number
-
-
   } // End of controller TODO: remove before production

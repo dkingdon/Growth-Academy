@@ -1,1 +1,78 @@
 <h1>Hello from the kMath page</h1>
+
+<div class="kMath-container">
+  <div class="row">
+    <div class="col-xs-12 flashcard">
+      <h1 id="equation"></h1>
+    </div>
+  </div>
+  <div class="answer-nums" style="visibility:hidden">
+    <ul>
+      <li>
+        <a ng-click="kMathCtrl.checkForWinner(0)">0</a>
+      </li>
+      <li>
+        <a ng-click="kMathCtrl.checkForWinner(1)">1</a>
+      </li>
+      <li>
+        <a ng-click="kMathCtrl.checkForWinner(2)">2</a>
+      </li>
+      <li>
+        <a ng-click="kMathCtrl.checkForWinner(3)">3</a>
+      </li>
+      <li>
+        <a ng-click="kMathCtrl.checkForWinner(4)">4</a>
+      </li>
+      <li>
+        <a ng-click="kMathCtrl.checkForWinner(5)">5</a>
+      </li>
+      <li>
+        <a ng-click="kMathCtrl.checkForWinner(6)">6</a>
+      </li>
+      <li>
+        <a ng-click="kMathCtrl.checkForWinner(7)">7</a>
+      </li>
+      <li>
+        <a ng-click="kMathCtrl.checkForWinner(8)">8</a>
+      </li>
+      <li>
+        <a ng-click="kMathCtrl.checkForWinner(9)">9</a>
+      </li>
+      <li>
+        <a ng-click="kMathCtrl.checkForWinner(10)">10</a>
+      </li>
+      <li>
+        <a ng-click="kMathCtrl.checkForWinner(11)">11</a>
+      </li>
+      <br />
+      <li>
+        <a ng-click="kMathCtrl.checkForWinner(12)">12</a>
+      </li>
+      <li>
+        <a ng-click="kMathCtrl.checkForWinner(13)">13</a>
+      </li>
+      <li>
+        <a ng-click="kMathCtrl.checkForWinner(14)">14</a>
+      </li>
+      <li>
+        <a ng-click="kMathCtrl.checkForWinner(15)">15</a>
+      </li>
+      <li>
+        <a ng-click="kMathCtrl.checkForWinner(16)">16</a>
+      </li>
+      <li>
+        <a ng-click="kMathCtrl.checkForWinner(17)">17</a>
+      </li>
+      <li>
+        <a href="#" ng-click="kMathCtrl.checkForWinner(18)">18</a>
+      </li>
+      <li>
+        <a href="#" ng-click="kMathCtrl.checkForWinner(19)">19</a>
+      </li>
+      <li>
+        <a href="#" ng-click="kMathCtrl.checkForWinner(20)">20</a>
+      </li>
+    </ul>
+  </div>
+  <button class="btn btn-success btn-lg action" role="button" ng-click="kMathCtrl.generateFlashCard()">Begin</button>
+</div>
