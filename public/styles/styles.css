@@ -15,12 +15,52 @@ body {
 #pk-board img {
   height: 20vh;
   margin-top: 5px;
-  /*width: 100px;*/
+}
+
+#k-board img {
+  height: 16vh;
+  margin-top: 5px;
+  margin-left: 2px;
+  margin-right: 2px;
+}
+
+#k-associations-board img{
+  height: 24vh;
+  margin-top: 5px;
+  margin-left: 2px;
+  margin-right: 2px;
+}
+
+#k-answers img {
+  height: 14vh;
+  margin-top: 15px;
+  margin-left: 4px;
+  margin-right: 4px;
 }
 
 .book-container {
   text-align: center;
   margin-top: 20px;
+}
+
+.answer-nums li {
+  list-style: none;
+  font-size: 5vh;
+  color: white !important;
+  display: inline;
+  border: 2px solid white;
+  margin-left: 4px;
+  margin-right: 4px;
+  text-align: center;
+  margin-top: 5px;
+}
+.answer-nums a {
+  color: white !important;
+  padding-left: 2px;
+}
+
+#equation {
+  font-size: 20vh;
 }
 
 .stinky img {

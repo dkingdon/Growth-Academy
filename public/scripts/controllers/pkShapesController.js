@@ -29,7 +29,7 @@ console.log('pkShapesController.js is connected') //TODO: Revome before producti
         }
         return arr;
       }
-
+ 
       //button display: for loop that loops through the randomized array and outputs a button. 4 times. name and iswinner arg will be created using index number. consider using .append()
 
       vm.displayOneShape = function() {
