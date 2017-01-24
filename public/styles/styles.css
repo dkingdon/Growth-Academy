@@ -15,7 +15,20 @@ body {
 #pk-board img {
   height: 20vh;
   margin-top: 5px;
-  /*width: 100px;*/
+}
+
+#k-board img {
+  height: 16vh;
+  margin-top: 5px;
+  margin-left: 2px;
+  margin-right: 2px;
+}
+
+#k-answers img {
+  height: 14vh;
+  margin-top: 5px;
+  margin-left: 4px;
+  margin-right: 4px;
 }
 
 .book-container {
