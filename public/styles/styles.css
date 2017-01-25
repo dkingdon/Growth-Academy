@@ -61,7 +61,6 @@ header a {
 #grade-select h2 {
   font-size: 8vh;
   margin-top: 10vh;
-  /*font-family: 'Anton', sans-serif;*/
   font-family: 'Bree Serif', serif;
 }
 
@@ -115,7 +114,6 @@ header a {
   margin: 0 0;
   font-stretch: extra-expanded;
   color: white;
-  /*alt color #30FF24*/
   text-shadow: 1px 1px 1px black,
              3px 3px 5px black;
 }

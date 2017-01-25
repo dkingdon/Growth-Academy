@@ -1,4 +1,3 @@
-console.log('pkCountingController.js is connected') //TODO: Revome before production
 
   angular
     .module('academy')
@@ -9,10 +8,6 @@ console.log('pkCountingController.js is connected') //TODO: Revome before produc
       var vm = this;
       var targetNum;
       var activeGame = 1
-
-      /* - - - temp - - - */
-      // maybe have the array be objects with name and image ref. this way can associate the selection with the answers.
-      // var numbers = ['one', 'two', 'three', 'four'];
 
       var numbers = [{name:'dinosaurs', amount:'one', img:'../images/pkCounting/dinosaurs.png'}, {name:'butterflies', amount:'two', img:'../images/pkCounting/butterflies.png'}, {name:'ballons', amount:'three', img:'../images/pkCounting/balloons.png'}, {name:'hotdogs', amount:'four', img:'../images/pkCounting/hotdogs.png'}];
 
@@ -48,7 +43,6 @@ console.log('pkCountingController.js is connected') //TODO: Revome before produc
         $('#pk-many-nums').attr('style', 'visibility:visible');
         var randomNums = vm.randomize(numbers);
         targetNum = randomNums[Math.floor(Math.random() * randomNums.length)];
-        //TODO: add condition to handle singular case
         $('#pk-directions h1').text('Can you find the goup of ' + targetNum.amount + '?');
         for (var i = 0; i < randomNums.length; i++) {
             $('#num-' + i ).attr('style', ' ');
@@ -57,9 +51,6 @@ console.log('pkCountingController.js is connected') //TODO: Revome before produc
         $('.action').attr('style', 'visibility:hidden');
       }
 
-
-      //TODO: deactivate buttons after inital answer
-      //TODO: maybe have a variable that the front end changes on click. run variable against randomNums.
       vm.checkForWinner = function(num) {
         $('#pk-board h2').text('');
         if (num == targetNum.amount) {
@@ -78,7 +69,4 @@ console.log('pkCountingController.js is connected') //TODO: Revome before produc
         $('.one-num').remove();
       };
 
-
-
-
-    } // End of controller TODO: remove before production
+    } 

@@ -1,4 +1,3 @@
-console.log('kPatternsController.js is connected') //TODO: Revome before production
 
   angular
     .module('academy')
@@ -62,4 +61,4 @@ console.log('kPatternsController.js is connected') //TODO: Revome before product
         $('.action').attr('style', 'visibility:visible');
       }
 
-  } // End of controller TODO: remove before production
+  } 

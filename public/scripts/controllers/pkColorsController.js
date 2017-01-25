@@ -1,4 +1,3 @@
-console.log('pkColorsController.js is connected') //TODO: Revome before production
 
   angular
     .module('academy')
@@ -10,8 +9,6 @@ console.log('pkColorsController.js is connected') //TODO: Revome before producti
       var targetColor;
       var activeGame = 1;
 
-      /* - - - temp - - - */
-      // maybe have the array be objects with name and image ref. this way can associate the selection with the answers.
       var colors = [{name:'red', img: '../images/pkColors/red.png'}, {name:'blue', img:'../images/pkColors/blue.png'}, {name:'yellow', img:'../images/pkColors/yellow.png'}, {name:'green', img:'../images/pkColors/green.png'}];
 
       vm.alternateGameStyle = function() {
@@ -54,7 +51,6 @@ console.log('pkColorsController.js is connected') //TODO: Revome before producti
         $('.action').attr('style', 'visibility:hidden');
       }
 
-      //TODO: deactivate buttons after inital answer
       vm.checkForWinner = function(color) {
         $('#pk-board h2').text('');
         if (color == targetColor.name) {
@@ -73,7 +69,4 @@ console.log('pkColorsController.js is connected') //TODO: Revome before producti
         $('.one-color').remove();
       };
 
-
-
-
-    } // End of controller TODO: remove before production
+    } 

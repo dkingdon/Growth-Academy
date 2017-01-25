@@ -1,4 +1,3 @@
-console.log('app.js is connected') // TODO: remove before production
 
   angular
     .module('academy', ['ngRoute'])
@@ -63,4 +62,4 @@ console.log('app.js is connected') // TODO: remove before production
         requireBase: false
       });
 
-    } //END of config function TODO: romove before production
+    } 

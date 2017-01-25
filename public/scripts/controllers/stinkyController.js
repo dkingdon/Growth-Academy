@@ -1,4 +1,3 @@
-console.log('stinkyController.js is connected') //TODO: Revome before production
 
   angular
     .module('academy')
@@ -30,4 +29,4 @@ console.log('stinkyController.js is connected') //TODO: Revome before production
         };
       }
 
-    } // End of controller TODO: remove before production
+    } 

@@ -1,4 +1,3 @@
-console.log('kMathController.js is connected') //TODO: Revome before production
 
   angular
     .module('academy')
@@ -8,9 +7,9 @@ console.log('kMathController.js is connected') //TODO: Revome before production
     function kMathController ($http) {
       var vm = this;
       var answer;
-      var firstVal; //might not need this to be global
-      var secondVal; //might not need this to be global
-      var operator; //might not need this to be global
+      var firstVal;
+      var secondVal;
+      var operator;
 
       var numbersList = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
       var operatorList = ['+', '-'];
@@ -44,7 +43,5 @@ console.log('kMathController.js is connected') //TODO: Revome before production
         $('.answer-nums').attr('style', 'visibility:hidden')
       };
 
-      // add click funtion to links
-      // value will be matched with answer var
 
-  } // End of controller TODO: remove before production
+  } 

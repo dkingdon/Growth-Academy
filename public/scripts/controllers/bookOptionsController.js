@@ -1,4 +1,3 @@
-console.log('bookOptionsController.js is connected') //TODO: Revome before production
 
   angular
     .module('academy')
@@ -9,4 +8,4 @@ console.log('bookOptionsController.js is connected') //TODO: Revome before produ
       var vm = this;
 
 
-    } // End of controller TODO: remove before production
+    } 
