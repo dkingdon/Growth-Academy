@@ -1,6 +1,6 @@
 body {
   text-align: center;
-  background: url(../images/background-letters.jpg) no-repeat center center fixed;
+  background: url(../images/backgrounds/background-letters.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -16,9 +16,9 @@ header {
 
 header h1 {
   float: left;
-  margin-top: -5px;
+  margin-top: -8px;
   position: relative;
-  font-size: 7vh;
+  font-size: 8vh;
   font-family: Fredericka the Great;
 }
 
@@ -26,6 +26,13 @@ header a {
   float: right;
   margin: 15px 10px;
   color: white !important;
+  text-decoration: none !important;
+}
+
+.head-nav {
+  background-color: #7F3BFF !important;
+  border: 2px solid white !important;
+  font-stretch: extra-expanded;
 }
 
 .viewport {
@@ -61,11 +68,12 @@ header a {
 #grade-select {
   margin-top: 4vh;
   height: 40vh;
-  background: url(http://download.4-designer.com/files/20140220/Cartoon-school-bus-illustrator-vector-material-55672.jpg) no-repeat center center;
+  background: url(../images/backgrounds/bus-main-bg.jpg) no-repeat center center;
   background-size: cover;
   border: 8px solid blue;
   border-radius: 15px;
-  text-shadow: 2px 2px white;
+  text-shadow: 2px 2px white,
+            3px 3px 5px black;
   font-size: 14vh;
 }
 
@@ -76,17 +84,16 @@ header a {
   border: 8px solid blue;
   border-radius: 15px;
   text-shadow: 1px 3px black;
-  /*font-family: 'Anton', sans-serif;*/
   font-family: 'Bree Serif', serif;
 }
 
 #pre-k-display {
-  background: url(../images/pre-k-btn.jpg) no-repeat center center;
+  background: url(../images/backgrounds/pre-k-btn.jpg) no-repeat center center;
   background-size: cover;
 }
 
 #kinder-display {
-  background: url(https://image.shutterstock.com/z/stock-vector-five-cute-cartoon-kids-walking-to-school-all-character-on-separate-layers-for-easy-editing-52580158.jpg) no-repeat center center;
+  background: url(../images/backgrounds/kinder-bg.jpg) no-repeat center center;
   background-size: cover;
 }
 
@@ -97,9 +104,7 @@ header a {
   color: #350AFF;
   text-shadow: 1px 1px 1px #000,
              3px 3px 5px white;
-
 }
-
 
 .game-nav-btns {
   margin-top: 5vh;
@@ -123,7 +128,7 @@ header a {
 }
 
 #shapes-btn {
-  background: url(https://thumbs.dreamstime.com/z/basic-shapes-cartoon-illustration-funny-triangle-circle-square-geometric-talking-44925656.jpg) no-repeat center center;
+  background: url(../images/backgrounds/shape-bg.jpg) no-repeat center center;
   background-size: cover;
 }
 
@@ -132,25 +137,24 @@ header a {
 }
 
 #colors-btn {
-  background: url(https://alesyabags.files.wordpress.com/2011/04/crayon1.jpg) no-repeat center center;
+  background: url(../images/backgrounds/colors-bg.jpg) no-repeat center center;
 }
 
 #patterns-btn {
-  background: url(https://image.freepik.com/free-vector/flower-power-pattern_1018-17.jpg) no-repeat center center;
+  background: url(../images/backgrounds/pattern-bg.jpg) no-repeat center center;
 }
 
 #association-btn {
-  background: url(https://www.colourbox.com/preview/4531386-abc-letters-from-the-box-cartoon.jpg) no-repeat center center;
+  background: url(../images/backgrounds/letters-bg.jpg) no-repeat center center;
 }
 
 #kmath-btn {
-  background: url(http://worldartsme.com/images/cartoon-math-free-clipart-1.jpg) no-repeat center center;
+  background: url(../images/backgrounds/math-bg.jpg) no-repeat center center;
 }
 
 
  /* - - -Pre-K - - - */
 .prek-container, .kMath-container {
-  border: 8px solid blue;
   border-radius: 15px;
   height: 76vh;
   margin: 0 20px;
@@ -234,6 +238,16 @@ header a {
   margin-top: 20px;
 }
 
+#stinky-face {
+  margin-top: 4vh;
+  height: 30vh;
+  background: url(../images/backgrounds/stinky0.jpg) no-repeat center center;
+  background-size: cover;
+  border: 8px solid blue;
+  border-radius: 15px;
+  text-shadow: 2px 2px white;
+  font-size: 14vh;
+}
 
 .stinky img {
   max-height: 100vh;
