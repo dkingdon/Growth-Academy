@@ -1,4 +1,3 @@
-console.log('kPatternsController.js is connected') //TODO: Revome before production
 
   angular
     .module('academy')
@@ -43,7 +42,7 @@ console.log('kPatternsController.js is connected') //TODO: Revome before product
         for (var i = 0; i < finalOptions.length; i++) {
           $('#pattern-' + i).attr('src', finalOptions[i].img).attr('style', 'visibility:visible');
         };
-        $('.action').text('Next');
+        $('.action').text('Next').attr('style', 'visibility:hidden');;
       }
 
       vm.checkForWinner = function(num) {
@@ -58,6 +57,8 @@ console.log('kPatternsController.js is connected') //TODO: Revome before product
           $('#pattern-header').text('Woops! Not quite right, the answer was ');
           $('#k-board').append('<img src="' + random[2].img + '" />');
         };
+        activeGame = 0;
+        $('.action').attr('style', 'visibility:visible');
       }
 
-  } // End of controller TODO: remove before production
+  } 

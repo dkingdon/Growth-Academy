@@ -1,4 +1,3 @@
-console.log('app.js is connected') // TODO: remove before production
 
   angular
     .module('academy', ['ngRoute'])
@@ -8,19 +7,12 @@ console.log('app.js is connected') // TODO: remove before production
     function config ($routeProvider, $locationProvider) {
       $routeProvider
         .when('/',{
-          templateUrl: './views/templates/homePage.html',
-          controllerAs: 'homePageCtrl',
-          controller: 'homePageController'
+          templateUrl: './views/templates/homePage.html'
         })
         .when('/select', {
           templateUrl: '/views/templates/gradeSelect.html',
           controllerAs: 'gradeSelectCtrl',
           controller: 'gradeSelectController'
-        })
-        .when('/options', {
-          templateUrl: '/views/templates/activityOptions.html',
-          controllerAs: 'activityOptionsCtrl',
-          controller: 'activityOptionsController'
         })
         .when('/pkShapes', {
           templateUrl: '/views/templates/pkShapes.html',
@@ -36,11 +28,6 @@ console.log('app.js is connected') // TODO: remove before production
           templateUrl: '/views/templates/pkCounting.html',
           controllerAs: 'pkCountingCtrl',
           controller: 'pkCountingController'
-        })
-        .when('/kinder', {
-          templateUrl: '/views/templates/kinderOptions.html',
-          controllerAs: 'kinderOptionsCtrl',
-          controller: 'kinderOptionsController'
         })
         .when('/kPatterns', {
           templateUrl: '/views/templates/kPatterns.html',
@@ -75,4 +62,4 @@ console.log('app.js is connected') // TODO: remove before production
         requireBase: false
       });
 
-    } //END of config function TODO: romove before production
+    } 

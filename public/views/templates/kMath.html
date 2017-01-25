@@ -1,11 +1,11 @@
-<h1>Hello from the kMath page</h1>
-
 <div class="kMath-container">
   <div class="row">
     <div class="col-xs-12 flashcard">
-      <h1 id="equation"></h1>
+      <h1></h1>
+      <h2 id="equation"></h2>
     </div>
   </div>
+  <br />
   <div class="answer-nums" style="visibility:hidden">
     <ul>
       <li>
@@ -45,6 +45,7 @@
         <a ng-click="kMathCtrl.checkForWinner(11)">11</a>
       </li>
       <br />
+      <br />
       <li>
         <a ng-click="kMathCtrl.checkForWinner(12)">12</a>
       </li>
@@ -74,5 +75,5 @@
       </li>
     </ul>
   </div>
-  <button class="btn btn-success btn-lg action" role="button" ng-click="kMathCtrl.generateFlashCard()">Begin</button>
+  <button style="visibility:visible" class="btn btn-success btn-lg action" role="button" ng-click="kMathCtrl.generateFlashCard()">Let's get started</button>
 </div>
