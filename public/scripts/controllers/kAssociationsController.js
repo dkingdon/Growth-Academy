@@ -10,7 +10,7 @@ console.log('kAssociationsController.js is connected') //TODO: Revome before pro
       var random;
       var answer;
 
-      var targetPictures = [{name:'bird', firstLetter: 'b', img:'../images/kAssociations/bird.png'}, {name:'carrot', firstLetter: 'c', img:'../images/kAssociations/carrot.png'}, {name:'elephant', firstLetter: 'e', img:'../images/kAssociations/elephant.png'}, {name:'dinosaurs', firstLetter: 'd', img:'../images/pkCounting/dinosaurs.png'}, {name:'fox', firstLetter: 'f', img:'../images/kAssociations/fox.png'}, {name:'grapes', firstLetter: 'g', img:'../images/kAssociations/grapes.png'}, {name:'lion', firstLetter: 'l', img:'../images/kAssociations/lion.png'}, {name:'rabbit', firstLetter: 'r', img:'../images/kAssociations/rabbit.png'}, {name:'snake', firstLetter: 's', img:'../images/kAssociations/snake.png'}, {name:'watermelon', firstLetter: 'w', img:'../images/kAssociations/watermelon.png'}, {name:'zebra', firstLetter: 'z', img:'../images/kAssociations/zebra.png'}];
+      var targetPictures = [{name:'bird', firstLetter: 'B', img:'../images/kAssociations/bird.png'}, {name:'carrot', firstLetter: 'C', img:'../images/kAssociations/carrot.png'}, {name:'elephant', firstLetter: 'E', img:'../images/kAssociations/elephant.png'}, {name:'dinosaurs', firstLetter: 'D', img:'../images/pkCounting/dinosaurs.png'}, {name:'fox', firstLetter: 'F', img:'../images/kAssociations/fox.png'}, {name:'grapes', firstLetter: 'G', img:'../images/kAssociations/grapes.png'}, {name:'lion', firstLetter: 'L', img:'../images/kAssociations/lion.png'}, {name:'rabbit', firstLetter: 'R', img:'../images/kAssociations/rabbit.png'}, {name:'snake', firstLetter: 'S', img:'../images/kAssociations/snake.png'}, {name:'watermelon', firstLetter: 'W', img:'../images/kAssociations/watermelon.png'}, {name:'zebra', firstLetter: 'Z', img:'../images/kAssociations/zebra.png'}];
 
       vm.randomize = function(arr) {
         var currentIndex = arr.length
@@ -25,7 +25,7 @@ console.log('kAssociationsController.js is connected') //TODO: Revome before pro
       }
 
       vm.displayTargetImage = function() {
-        $('.action').text('Next');
+        $('.action').text('Next').attr('style', 'visibility:hidden');
         random = vm.randomize(targetPictures);
         var randomMinimized = [random[0], random[1], random[2]];
         var finalPieces = vm.randomize(randomMinimized);
@@ -41,11 +41,12 @@ console.log('kAssociationsController.js is connected') //TODO: Revome before pro
           $('#kPic-' + i).attr('src', ' ').attr('style', 'visibility:hidden');
         }
         if (num === answer) {
-          $('#question').text('Great Job! You did it! The word ' + '"' + random[1].name + '"' + ' starts with the letter ' + '"' + random[1].firstLetter + '"!' );
+          $('#question').text('Great Job! The word ' + '"' + random[1].name + '"' + ' starts with the letter ' + '"' + random[1].firstLetter + '"!' );
         }
         else {
           $('#question').text('Woops! Not quite right, please try again');
         }
+        $('.action').attr('style', 'visibility:visible');
       }
 
   } // End of controller TODO: remove before production

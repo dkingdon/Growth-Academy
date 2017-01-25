@@ -28,15 +28,20 @@ console.log('kMathController.js is connected') //TODO: Revome before production
 
         $('#equation').text(firstVal + ' ' + operator + ' ' + secondVal + ' ' + '=');
         $('.answer-nums').attr('style', 'visibility: visible');
+        $('.action').attr('style', 'visibility:hidden');
+        $('.flashcard h1').text(' ');
       }
 
       vm.checkForWinner = function(num) {
+        $('#equation').text(' ');
         if (num === answer) {
-          $('#equation').text('Great Job!');
+          $('.flashcard h1').text('Great Job!');
         }
         else {
-          $('#equation').text('Woops! ' + firstVal + ' ' + operator + ' ' + secondVal + ' = ' + answer);
+          $('.flashcard h1').text('Woops! Try again.');
         }
+        $('.action').text('Next').attr('style', 'visibility:visible');
+        $('.answer-nums').attr('style', 'visibility:hidden')
       };
 
       // add click funtion to links

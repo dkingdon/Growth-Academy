@@ -1,43 +1,38 @@
-<h1>Hello from the pre-k counting page</h1>
-
-  <br />
-
-  <div id="pk-directions">
-    <h1></h1>
-  </div>
-
-
-  <br />
-
-    <div id="pk-board">
-      <div id="pk-many-nums" style="visibility:hidden">
-        <img id="num-0" style="height:0px" ng-click="pkCountingCtrl.checkForWinner('three')"  src="../images/pkCounting/balloons.png" />
-
-        <img id="num-1" style="height:0px" ng-click="pkCountingCtrl.checkForWinner('one')" src="../images/pkCounting/dinosaurs.png" />
-
-        <img id="num-2" style="height:0px" ng-click="pkCountingCtrl.checkForWinner('two')"src="../images/pkCounting/butterflies.png" />
-
-        <img id="num-3" style="height:0px" ng-click="pkCountingCtrl.checkForWinner('four')"src="../images/pkCounting/hotdogs.png" />
+<div class="prek-container">
+  <div class="row">
+    <div class="col-xs-12">
+      <div id="pk-directions">
+        <h1></h1>
       </div>
-      <h2></h2>
+
+    <br />
+
+      <div id="pk-board">
+        <div id="pk-many-nums" style="visibility:hidden">
+          <img id="num-0" style="height:0px" ng-click="pkCountingCtrl.checkForWinner('three')"  src="../images/pkCounting/balloons.png" />
+
+          <img id="num-1" style="height:0px" ng-click="pkCountingCtrl.checkForWinner('one')" src="../images/pkCounting/dinosaurs.png" />
+
+          <img id="num-2" style="height:0px" ng-click="pkCountingCtrl.checkForWinner('two')"src="../images/pkCounting/butterflies.png" />
+
+          <img id="num-3" style="height:0px" ng-click="pkCountingCtrl.checkForWinner('four')"src="../images/pkCounting/hotdogs.png" />
+        </div>
+        <h2></h2>
+      </div>
+
+    <br />
+
+      <div id="pk-answer-btns"style="visibility:hidden">
+          <button href="" class="btn btn-success btn-lg" role="button" ng-click="pkCountingCtrl.checkForWinner('one')">One</button>
+
+          <button href="" class="btn btn-success btn-lg" role="button" ng-click="pkCountingCtrl.checkForWinner('two')">Two</button>
+
+          <button href="" class="btn btn-success btn-lg" role="button" ng-click="pkCountingCtrl.checkForWinner('three')">Three</button>
+
+          <button href="" class="btn btn-success btn-lg" role="button" ng-click="pkCountingCtrl.checkForWinner('four')">Four</button>
+      </div>
+
+      <button style="visibility:visible" class="btn btn-success btn-lg action" role="button" ng-click="pkCountingCtrl.alternateGameStyle()">Let's get started</button>
     </div>
-
-  <br />
-
-  <!-- TODO: will need to dynamically and randomly generate these buttons before production -->
-    <div id="pk-answer-btns"style="visibility:hidden">
-        <button href="" class="btn btn-success btn-lg" role="button" ng-click="pkCountingCtrl.checkForWinner('one')">One</button>
-
-        <button href="" class="btn btn-success btn-lg" role="button" ng-click="pkCountingCtrl.checkForWinner('two')">Two</button>
-
-        <button href="" class="btn btn-success btn-lg" role="button" ng-click="pkCountingCtrl.checkForWinner('three')">Three</button>
-
-        <button href="" class="btn btn-success btn-lg" role="button" ng-click="pkCountingCtrl.checkForWinner('four')">Four</button>
-    </div>
-
-  <br />
-
-  <button href="" class="btn btn-success btn-lg action" role="button" ng-click="pkCountingCtrl.alternateGameStyle()">Play</button>
-
-
-  <a href="/" class="btn btn-primary active btn-xs" role="button">Home</a>
+  </div>
+</div>

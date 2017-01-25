@@ -40,6 +40,7 @@ console.log('pkCountingController.js is connected') //TODO: Revome before produc
         $('#pk-board').prepend('<img class="one-num" src="' + targetNum.img + '" />');
         $('#pk-answer-btns').attr('style', 'visibility:visible');
         activeGame = 0;
+        $('.action').attr('style', 'visibility:hidden');
       }
 
       vm.displayManyNums = function() {
@@ -53,6 +54,7 @@ console.log('pkCountingController.js is connected') //TODO: Revome before produc
             $('#num-' + i ).attr('style', ' ');
         }
         activeGame = 1
+        $('.action').attr('style', 'visibility:hidden');
       }
 
 
@@ -72,7 +74,7 @@ console.log('pkCountingController.js is connected') //TODO: Revome before produc
             $('#num-' + i ).attr('style', 'height:0px');
           }
         $('#pk-answer-btns').attr('style', 'visibility:hidden');
-        $('.action').text('Next');
+        $('.action').text('Next').attr('style', 'visibility:visible');;
         $('.one-num').remove();
       };
 

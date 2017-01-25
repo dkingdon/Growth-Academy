@@ -1,16 +1,23 @@
-<h1 id="question">Hello from the kAssociations page</h1>
+<div class="prek-container">
+  <div class="row">
+    <div class="col-xs-12">
 
+    <br />  
+      <h1 id="question"></h1>
 
-<br />
+    <br />
 
-  <div id="k-associations-board">
-    <img id="kPic-0" style="visibility:hidden" ng-click="kAssociationsCtrl.checkForWinner(0)"  src="" />
+      <div id="k-associations-board">
+        <img id="kPic-0" style="visibility:hidden" ng-click="kAssociationsCtrl.checkForWinner(0)"  src="" />
 
-    <img id="kPic-1" style="visibility:hidden" ng-click="kAssociationsCtrl.checkForWinner(1)" src="" />
+        <img id="kPic-1" style="visibility:hidden" ng-click="kAssociationsCtrl.checkForWinner(1)" src="" />
 
-    <img id="kPic-2" style="visibility:hidden" ng-click="kAssociationsCtrl.checkForWinner(2)"src="" />
+        <img id="kPic-2" style="visibility:hidden" ng-click="kAssociationsCtrl.checkForWinner(2)"src="" />
+      </div>
+
+    <br />
+
+      <button style="visibility:visible" class="btn btn-success btn-lg action" role="button" ng-click="kAssociationsCtrl.displayTargetImage()">Let's get started</button>
+    </div>
   </div>
-
-<br />
-
-<button class="btn btn-success btn-lg action" role="button" ng-click="kAssociationsCtrl.displayTargetImage()">Play</button>
+</div>

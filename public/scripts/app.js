@@ -15,9 +15,6 @@ console.log('app.js is connected') // TODO: remove before production
           controllerAs: 'gradeSelectCtrl',
           controller: 'gradeSelectController'
         })
-        .when('/options', {
-          templateUrl: '/views/templates/activityOptions.html'
-        })
         .when('/pkShapes', {
           templateUrl: '/views/templates/pkShapes.html',
           controllerAs: 'pkShapesCtrl',
@@ -32,9 +29,6 @@ console.log('app.js is connected') // TODO: remove before production
           templateUrl: '/views/templates/pkCounting.html',
           controllerAs: 'pkCountingCtrl',
           controller: 'pkCountingController'
-        })
-        .when('/kinder', {
-          templateUrl: '/views/templates/kinderOptions.html'
         })
         .when('/kPatterns', {
           templateUrl: '/views/templates/kPatterns.html',

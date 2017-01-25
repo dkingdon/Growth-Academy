@@ -1,11 +1,11 @@
 body {
-  color: black;
   text-align: center;
   background: url(../images/background-letters.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
   background-size: cover;
+  font-family: 'Bree Serif', serif;
 }
 
 header {
@@ -14,10 +14,12 @@ header {
   text-align: center;
 }
 
-header h1{
+header h1 {
   float: left;
-  margin-top: 0px;
+  margin-top: -5px;
   position: relative;
+  font-size: 7vh;
+  font-family: Fredericka the Great;
 }
 
 header a {
@@ -27,7 +29,6 @@ header a {
 }
 
 .viewport {
-  border: 2px solid white;
   border-radius: 10px;
   height: 80vh;
   margin-left: 10px;
@@ -35,44 +36,48 @@ header a {
 }
 /* - - - Home Page - - - */
 .home-container {
-  /*background: url(http://laqueteimporta.files.wordpress.com/2013/01/blackboard-with-chalk.jpg) no-repeat center center fixed;*/
   height: 80vh;
 }
 
 .home-container h1 {
   font-size: 6vh;
   margin-bottom: 0;
+  text-shadow: 1px 2px white;
 }
 
 .home-container a {
-  color: white !important;
+  color: #FF3187 !important;
+  font-stretch: extra-expanded;
+  text-shadow: 1px 2px white;
 }
 
 #grade-select h2 {
   font-size: 8vh;
   margin-top: 10vh;
+  /*font-family: 'Anton', sans-serif;*/
+  font-family: 'Bree Serif', serif;
 }
 
 #grade-select {
-  margin-top: 8vh;
+  margin-top: 4vh;
   height: 40vh;
   background: url(http://download.4-designer.com/files/20140220/Cartoon-school-bus-illustrator-vector-material-55672.jpg) no-repeat center center;
   background-size: cover;
   border: 8px solid blue;
   border-radius: 15px;
-  text-shadow: 1px 1px black;
+  text-shadow: 2px 2px white;
   font-size: 14vh;
 }
 
-/* - - - Home Page - - - */
+/* - - - Activity Select Screen - - - */
 .game-options {
   margin-top: 2vh;
   height: 30vh;
-  /*background: url(http://download.4-designer.com/files/20140220/Cartoon-school-bus-illustrator-vector-material-55672.jpg) no-repeat center center;*/
-  background-size: cover;
   border: 8px solid blue;
   border-radius: 15px;
-  text-shadow: 1px 1px black;
+  text-shadow: 1px 3px black;
+  /*font-family: 'Anton', sans-serif;*/
+  font-family: 'Bree Serif', serif;
 }
 
 #pre-k-display {
@@ -88,10 +93,26 @@ header a {
 .game-options h1 {
   font-size: 10vh;
   margin-top: 3vh;
+  font-stretch: extra-expanded;
+  color: #350AFF;
+  text-shadow: 1px 1px 1px #000,
+             3px 3px 5px white;
+
 }
+
 
 .game-nav-btns {
   margin-top: 5vh;
+}
+
+.game-nav-btns h2 {
+  font-size: 5vh;
+  margin: 0 0;
+  font-stretch: extra-expanded;
+  color: white;
+  /*alt color #30FF24*/
+  text-shadow: 1px 1px 1px black,
+             3px 3px 5px black;
 }
 
 #shapes-btn, #counting-btn, #colors-btn, #patterns-btn, #association-btn, #kmath-btn {
@@ -127,12 +148,30 @@ header a {
 }
 
 
-
-
+ /* - - -Pre-K - - - */
+.prek-container, .kMath-container {
+  border: 8px solid blue;
+  border-radius: 15px;
+  height: 76vh;
+  margin: 0 20px;
+}
 
 #pk-board img {
   height: 20vh;
   margin-top: 5px;
+}
+
+#pk-answer-btns button {
+  margin: 0 10px;
+  background-color: #8F24FF;
+  border-radius: 50px;
+  font-size: 5vh;
+}
+
+.action {
+  background-color: #8F24FF;
+  border-radius: 50px;
+  font-size: 5vh;
 }
 
 #k-board img {
@@ -142,6 +181,8 @@ header a {
   margin-right: 2px;
 }
 
+/* - - - Kinder - - - */
+
 #k-associations-board img{
   height: 24vh;
   margin-top: 5px;
@@ -150,36 +191,49 @@ header a {
 }
 
 #k-answers img {
-  height: 14vh;
-  margin-top: 15px;
-  margin-left: 4px;
-  margin-right: 4px;
+  height: 12vh;
+  margin-top: 25px;
+  margin-left: 6px;
+  margin-right: 6px;
+  border: 4px solid blue;
+  border-radius: 15px;
+  background-color: grey;
 }
+
+#question {
+  margin-top: 30px;
+}
+
+.answer-nums li {
+  list-style: none;
+  font-size: 5vh;
+  color: #FF3187 !important;
+  display: inline;
+  border: 2px solid black;
+  border-radius: 200px;
+  margin-left: 7px;
+  margin-right: 7px;
+  text-align: center;
+  background-color: #9EB9E8;
+}
+.answer-nums a {
+  color: #FF3187 !important;
+  padding-left: 11px;
+  cursor: pointer;
+}
+
+#equation {
+  font-size: 20vh;
+}
+
+
+/* - - - Books - - - */
 
 .book-container {
   text-align: center;
   margin-top: 20px;
 }
 
-.answer-nums li {
-  list-style: none;
-  font-size: 5vh;
-  color: white !important;
-  display: inline;
-  border: 2px solid white;
-  margin-left: 4px;
-  margin-right: 4px;
-  text-align: center;
-  margin-top: 5px;
-}
-.answer-nums a {
-  color: white !important;
-  padding-left: 2px;
-}
-
-#equation {
-  font-size: 20vh;
-}
 
 .stinky img {
   max-height: 100vh;

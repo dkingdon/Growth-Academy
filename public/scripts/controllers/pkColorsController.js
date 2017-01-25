@@ -37,6 +37,7 @@ console.log('pkColorsController.js is connected') //TODO: Revome before producti
         $('#pk-board').prepend('<img class="one-color" src="' + targetColor.img + '" />');
         $('#pk-answer-btns').attr('style', 'visibility:visible');
         activeGame = 0;
+        $('.action').attr('style', 'visibility:hidden');
       }
 
 
@@ -50,14 +51,8 @@ console.log('pkColorsController.js is connected') //TODO: Revome before producti
             $('#color-' + i ).attr('style', ' ');
         }
         activeGame = 1
+        $('.action').attr('style', 'visibility:hidden');
       }
-
-      //TODO: remove if cannot refactor. Parking here to come back to
-      // for (var i = 0; i < randomColors.length; i++) {
-      //   $('#color-' + i ).attr('src', randomColors[i].img);
-      //     $('#color-' + i ).attr('style', ' ');
-      //       $('#color-' + i ).attr('ng-click', "pkColorsCtrl.checkForWinner('" + randomColors[i].name + "')");
-      // }
 
       //TODO: deactivate buttons after inital answer
       vm.checkForWinner = function(color) {
@@ -67,14 +62,14 @@ console.log('pkColorsController.js is connected') //TODO: Revome before producti
         }
         else {
           $('#pk-directions h1').text("Woops, not quite right");
-          $('#pk-board h2').text('That was ' + targetColor.name);
+          $('#pk-board h2').text('The color you chose was ' + targetColor.name);
         };
         $('#pk-answer-btns').attr('style', 'visibility:hidden');
           for (var i = 0; i < 4; i++) {
             $('#color-' + i ).attr('style', 'height:0px');
           }
         $('#pk-many-colors').attr('style', 'visibility:hidden');
-        $('.action').text('Next');
+        $('.action').text('Next').attr('style', 'visibility:visible');;
         $('.one-color').remove();
       };
 

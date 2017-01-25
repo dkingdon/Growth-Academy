@@ -29,7 +29,7 @@ console.log('pkShapesController.js is connected') //TODO: Revome before producti
         }
         return arr;
       }
- 
+
       //button display: for loop that loops through the randomized array and outputs a button. 4 times. name and iswinner arg will be created using index number. consider using .append()
 
       vm.displayOneShape = function() {
@@ -39,6 +39,7 @@ console.log('pkShapesController.js is connected') //TODO: Revome before producti
         $('#pk-board').prepend('<img class="one-shape" src="' + targetShape.img + '" />');
         $('#pk-answer-btns').attr('style', 'visibility:visible');
         activeGame = 0;
+        $('.action').attr('style', 'visibility:hidden');
       }
 
       vm.displayManyShapes = function() {
@@ -51,6 +52,8 @@ console.log('pkShapesController.js is connected') //TODO: Revome before producti
             $('#shape-' + i ).attr('style', ' ');
         }
         activeGame = 1
+        $('.action').attr('style', 'visibility:hidden');
+
       }
 
 
@@ -69,7 +72,7 @@ console.log('pkShapesController.js is connected') //TODO: Revome before producti
             $('#shape-' + i ).attr('style', 'height:0px');
           }
         $('#pk-many-shapes').attr('style', 'visibility:hidden');
-        $('.action').text('Next');
+        $('.action').text('Next').attr('style', 'visibility:visible');
         $('.one-shape').remove();
       };
 
