@@ -8,9 +8,7 @@ console.log('app.js is connected') // TODO: remove before production
     function config ($routeProvider, $locationProvider) {
       $routeProvider
         .when('/',{
-          templateUrl: './views/templates/homePage.html',
-          controllerAs: 'homePageCtrl',
-          controller: 'homePageController'
+          templateUrl: './views/templates/homePage.html'
         })
         .when('/select', {
           templateUrl: '/views/templates/gradeSelect.html',
@@ -18,9 +16,7 @@ console.log('app.js is connected') // TODO: remove before production
           controller: 'gradeSelectController'
         })
         .when('/options', {
-          templateUrl: '/views/templates/activityOptions.html',
-          controllerAs: 'activityOptionsCtrl',
-          controller: 'activityOptionsController'
+          templateUrl: '/views/templates/activityOptions.html'
         })
         .when('/pkShapes', {
           templateUrl: '/views/templates/pkShapes.html',
@@ -38,9 +34,7 @@ console.log('app.js is connected') // TODO: remove before production
           controller: 'pkCountingController'
         })
         .when('/kinder', {
-          templateUrl: '/views/templates/kinderOptions.html',
-          controllerAs: 'kinderOptionsCtrl',
-          controller: 'kinderOptionsController'
+          templateUrl: '/views/templates/kinderOptions.html'
         })
         .when('/kPatterns', {
           templateUrl: '/views/templates/kPatterns.html',

@@ -33,11 +33,17 @@ header a {
   margin-left: 10px;
   margin-right: 10px;
 }
-
+/* - - - Home Page - - - */
 .home-container {
   /*background: url(http://laqueteimporta.files.wordpress.com/2013/01/blackboard-with-chalk.jpg) no-repeat center center fixed;*/
   height: 80vh;
 }
+
+.home-container h1 {
+  font-size: 6vh;
+  margin-bottom: 0;
+}
+
 .home-container a {
   color: white !important;
 }
@@ -58,9 +64,71 @@ header a {
   font-size: 14vh;
 }
 
-.home-container h1 {
-    font-size: 6vh;
+/* - - - Home Page - - - */
+.game-options {
+  margin-top: 2vh;
+  height: 30vh;
+  /*background: url(http://download.4-designer.com/files/20140220/Cartoon-school-bus-illustrator-vector-material-55672.jpg) no-repeat center center;*/
+  background-size: cover;
+  border: 8px solid blue;
+  border-radius: 15px;
+  text-shadow: 1px 1px black;
 }
+
+#pre-k-display {
+  background: url(../images/pre-k-btn.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+#kinder-display {
+  background: url(https://image.shutterstock.com/z/stock-vector-five-cute-cartoon-kids-walking-to-school-all-character-on-separate-layers-for-easy-editing-52580158.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+.game-options h1 {
+  font-size: 10vh;
+  margin-top: 3vh;
+}
+
+.game-nav-btns {
+  margin-top: 5vh;
+}
+
+#shapes-btn, #counting-btn, #colors-btn, #patterns-btn, #association-btn, #kmath-btn {
+  border: 6px solid red;
+  border-radius: 15px;
+  margin-left: 10px;
+  margin-left: 6%;
+}
+
+#shapes-btn {
+  background: url(https://thumbs.dreamstime.com/z/basic-shapes-cartoon-illustration-funny-triangle-circle-square-geometric-talking-44925656.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+#counting-btn {
+  background: url(https://lh3.googleusercontent.com/vLQVYl0l4jqO_QAuBDkG3oqa7zOlH0f_KU3-xZMzhOSvOZPn7NpsT8pDqeDdbHBNn-Q=w300-rw) no-repeat center center;
+}
+
+#colors-btn {
+  background: url(https://alesyabags.files.wordpress.com/2011/04/crayon1.jpg) no-repeat center center;
+}
+
+#patterns-btn {
+  background: url(https://image.freepik.com/free-vector/flower-power-pattern_1018-17.jpg) no-repeat center center;
+}
+
+#association-btn {
+  background: url(https://www.colourbox.com/preview/4531386-abc-letters-from-the-box-cartoon.jpg) no-repeat center center;
+}
+
+#kmath-btn {
+  background: url(http://worldartsme.com/images/cartoon-math-free-clipart-1.jpg) no-repeat center center;
+}
+
+
+
+
 
 #pk-board img {
   height: 20vh;
