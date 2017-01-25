@@ -5,7 +5,7 @@ body {
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-size: cover;
+  background-size: cover;
 }
 
 header {
@@ -17,6 +17,7 @@ header {
 header h1{
   float: left;
   margin-top: 0px;
+  position: relative;
 }
 
 header a {
@@ -36,6 +37,29 @@ header a {
 .home-container {
   /*background: url(http://laqueteimporta.files.wordpress.com/2013/01/blackboard-with-chalk.jpg) no-repeat center center fixed;*/
   height: 80vh;
+}
+.home-container a {
+  color: white !important;
+}
+
+#grade-select h2 {
+  font-size: 8vh;
+  margin-top: 10vh;
+}
+
+#grade-select {
+  margin-top: 8vh;
+  height: 40vh;
+  background: url(http://download.4-designer.com/files/20140220/Cartoon-school-bus-illustrator-vector-material-55672.jpg) no-repeat center center;
+  background-size: cover;
+  border: 8px solid blue;
+  border-radius: 15px;
+  text-shadow: 1px 1px black;
+  font-size: 14vh;
+}
+
+.home-container h1 {
+    font-size: 6vh;
 }
 
 #pk-board img {
