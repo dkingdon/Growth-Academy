@@ -111,6 +111,7 @@ header a {
 
 .game-nav-btns h2 {
   font-size: 5vh;
+  /*font-size: 5vh 5vw; TODO: need to add width to all of these*/
   margin: 0 0;
   font-stretch: extra-expanded;
   color: white;

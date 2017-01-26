@@ -9,7 +9,7 @@
       var targetNum;
       var activeGame = 1
 
-      var numbers = [{name:'dinosaurs', amount:'one', img:'../images/pkCounting/dinosaurs.png'}, {name:'butterflies', amount:'two', img:'../images/pkCounting/butterflies.png'}, {name:'ballons', amount:'three', img:'../images/pkCounting/balloons.png'}, {name:'hotdogs', amount:'four', img:'../images/pkCounting/hotdogs.png'}];
+      var numbers = [{name:'dinosaurs', amount:'one', img:'../images/pkCounting/dinosaurs.png'}, {name:'butterflies', amount:'two', img:'../images/pkCounting/butterflies.png'}, {name:'balloons', amount:'three', img:'../images/pkCounting/balloons.png'}, {name:'hotdogs', amount:'four', img:'../images/pkCounting/hotdogs.png'}];
 
       vm.alternateGameStyle = function() {
         activeGame === 1 ? vm.displayOneNum() : vm.displayManyNums();
@@ -69,4 +69,4 @@
         $('.one-num').remove();
       };
 
-    } 
+    }

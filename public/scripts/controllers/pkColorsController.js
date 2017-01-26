@@ -58,7 +58,7 @@
         }
         else {
           $('#pk-directions h1').text("Woops, not quite right");
-          $('#pk-board h2').text('The color you chose was ' + targetColor.name);
+          $('#pk-board h2').text('The color you chose was ' + color);
         };
         $('#pk-answer-btns').attr('style', 'visibility:hidden');
           for (var i = 0; i < 4; i++) {
@@ -69,4 +69,4 @@
         $('.one-color').remove();
       };
 
-    } 
+    }
