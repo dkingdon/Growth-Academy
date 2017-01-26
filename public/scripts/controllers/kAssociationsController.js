@@ -30,7 +30,7 @@
         var randomMinimized = [random[0], random[1], random[2]];
         var finalPieces = vm.randomize(randomMinimized);
         answer = finalPieces.indexOf(random[1]);
-        $('#question').text('Can you find the picture that begin with the letter "' + random[1].firstLetter + '" ?')
+        $('#question').text('Can you find the picture that begins with the letter "' + random[1].firstLetter + '" ?')
         for (var i = 0; i < finalPieces.length; i++) {
           $('#kPic-' + i).attr('src', finalPieces[i].img).attr('style', 'visibility:visible');
         };
@@ -49,4 +49,4 @@
         $('.action').attr('style', 'visibility:visible');
       }
 
-  } 
+  }
