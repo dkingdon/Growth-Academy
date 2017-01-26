@@ -13,7 +13,7 @@ HTML, CSS, javascript, jQuery 3.1.1 CDN, Boostrap 3.3.7 CDN, Angularjs 1.5.6 CDN
 * My work around was to change the way I was handling my algorithm in a way that does not take arguments as part of the function as well as hard coded the html elements in the view and hide them with <style="visibility:hidden"> toggling visibility on and off as needed.
 
 ## Known Issues (bugs)
-* Formatting not great on phone on portrait
+* Formatting not great on phone in portrait view
 * Performance is a bit slow while changing pages in the book section
 * Counting button background on the activity select screen not appearing in Safari
 
@@ -36,4 +36,3 @@ HTML, CSS, javascript, jQuery 3.1.1 CDN, Boostrap 3.3.7 CDN, Angularjs 1.5.6 CDN
 
 ## Credits
 * I Love You Stinky Face - http://www.lisamccourt.com/
-*
