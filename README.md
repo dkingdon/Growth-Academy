@@ -3,7 +3,7 @@
 ### Currently two grade levels (Pre-k & Kindergarten) with three activities each, including a book section.
 * App Link: https://growthacademy.herokuapp.com/
 
-![image](images/readMe-screenshot.png)
+![image](public/images/readMe-screenshot.png)
 
 ## Technologies
 HTML, CSS, javascript, jQuery 3.1.1 CDN, Boostrap 3.3.7 CDN, Angularjs 1.5.6 CDN, Heroku
@@ -15,7 +15,7 @@ HTML, CSS, javascript, jQuery 3.1.1 CDN, Boostrap 3.3.7 CDN, Angularjs 1.5.6 CDN
 ## Known Issues (bugs)
 * Formatting not great on phone on portrait
 * Performance is a bit slow while changing pages in the book section
-* Counting button background on the activity select screen not appearing in Safari 
+* Counting button background on the activity select screen not appearing in Safari
 
 ## Thinking Ahead
 * Better, more consistently themed activity piece images
