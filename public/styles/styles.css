@@ -8,6 +8,7 @@ body {
   font-family: 'Bree Serif', serif;
 }
 
+/*maybe some more margin here would be good on the header */
 header {
   height: 10vh;
   background-color: rgba(0, 0, 0, 0.5);

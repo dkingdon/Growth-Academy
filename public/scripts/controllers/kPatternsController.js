@@ -1,4 +1,4 @@
-
+//Thank you for having consistent code style!
   angular
     .module('academy')
     .controller('kPatternsController', kPatternsController);
@@ -61,4 +61,4 @@
         $('.action').attr('style', 'visibility:visible');
       }
 
-  } 
+  }

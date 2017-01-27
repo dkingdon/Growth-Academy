@@ -9,6 +9,8 @@
       var targetColor;
       var activeGame = 1;
 
+//Eventually you'll probably want to host images somewhere on the web/in the cloud instead of locally
+//This might be somewhat slow on Heroku though.
       var colors = [{name:'red', img: '../images/pkColors/red.png'}, {name:'blue', img:'../images/pkColors/blue.png'}, {name:'yellow', img:'../images/pkColors/yellow.png'}, {name:'green', img:'../images/pkColors/green.png'}];
 
       vm.alternateGameStyle = function() {

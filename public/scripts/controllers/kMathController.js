@@ -2,7 +2,7 @@
   angular
     .module('academy')
     .controller('kMathController', kMathController);
-
+//This is really great code. lots of clever stuff here 
     kMathController.$inject = ['$http'];
     function kMathController ($http) {
       var vm = this;
@@ -44,4 +44,4 @@
       };
 
 
-  } 
+  }

@@ -29,6 +29,7 @@
         return arr;
       }
 
+//Also very clever code.
       vm.displayOneNum = function() {
         targetNum = numbers[Math.floor(Math.random() * numbers.length)];
         $('#pk-directions h1').text('How many ' + targetNum.name + ' are there?');
