@@ -20,7 +20,11 @@ header h1 {
   position: relative;
   font-size: 8vh;
   font-family: Fredericka the Great;
-}
+  }
+  /* Need to revisit */
+    /*@media screen and (max-width: 375px) {
+      header h1 {
+        font-size: 8vw; }*/
 
 header a {
   float: right;
@@ -47,7 +51,7 @@ header a {
 }
 
 .home-container h1 {
-  font-size: 6vh;
+  font-size: 6vh 10vw;
   margin-bottom: 0;
   text-shadow: 1px 2px white;
 }
@@ -79,7 +83,7 @@ header a {
 /* - - - Activity Select Screen - - - */
 .game-options {
   margin-top: 2vh;
-  height: 30vh;
+  height: 30vh 40vw;
   border: 8px solid blue;
   border-radius: 15px;
   text-shadow: 1px 3px black;
@@ -110,7 +114,7 @@ header a {
 }
 
 .game-nav-btns h2 {
-  font-size: 5vh;
+  font-size: 5vh 5vw;
   /*font-size: 5vh 5vw; TODO: need to add width to all of these*/
   margin: 0 0;
   font-stretch: extra-expanded;
