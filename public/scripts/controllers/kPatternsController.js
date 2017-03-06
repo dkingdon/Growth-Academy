@@ -34,6 +34,9 @@
         random = vm.randomize(patternOptions);
         var pattern = [random[0], random[1], random[2], random[0], random[1], {name:'question', img:'../images/question_mark.png'}];
         var preRandomOptions = [random[2], random[1], random[6], random[4] ]
+
+        // need to find a way to not hard code the question mark in the array. randomly select an index and replace it with the question mark. That the value of the old index moves to the answer variable above.
+
         var finalOptions = vm.randomize(preRandomOptions);
         answer = finalOptions.indexOf(random[2])
         for (var i = 0; i < pattern.length; i++) {
@@ -61,4 +64,4 @@
         $('.action').attr('style', 'visibility:visible');
       }
 
-  } 
+  }
