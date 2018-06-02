@@ -2,7 +2,7 @@
   angular
     .module('academy', ['ngRoute'])
     .config(config);
-
+//Great use of angular routing.
     config.$inject = ['$routeProvider', '$locationProvider']
     function config ($routeProvider, $locationProvider) {
       $routeProvider
@@ -62,4 +62,4 @@
         requireBase: false
       });
 
-    } 
+    }
